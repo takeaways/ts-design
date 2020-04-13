@@ -14,11 +14,16 @@ module.exports = {
 		rules: [
 			{
 				test: /\.tsx?$/, //ts 또는 tsx 파일 같은경우는 atl 로더를 통하여 변화를 시키겠다.
-				loader: 'awesome-typescript-loader',
-			},
+        loader: 'awesome-typescript-loader',
+        options:{
+          useBabel: true,
+          babelCore: "@babel/core"
+        }
+			}
 		],
 	},
 	plugins: [],
+
 	output: {
 		filename: '[name].js',
 		path: path.join(__dirname, 'dist'),

@@ -9,9 +9,12 @@
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
 		"strict": true,
-    "lib": ["dom", "es2020"],
-    "typeRoots" : ["./types"],
-    "jsx": "react"
+		"lib": ["dom", "es2020"],
+		"typeRoots": ["./types"],
+		"jsx": "react"
 	},
-	"exclude": ["./node_modules"]
+
+
+	"exclude": ["./node_modules"],
+
 }
