@@ -1,7 +1,17 @@
 {
-  "compilerOptions": {
-    "strict": true,
+	"compilerOptions": {
+		"target": "es5",
+		"module": "commonjs",
+		"declaration": false,
+		"noImplicitAny": false,
+		"removeComments": true,
+		"noLib": false,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"strict": true,
     "lib": ["dom", "es2020"],
-    "jsx": "react",
-  }
+    "typeRoots" : ["./types"],
+    "jsx": "react"
+	},
+	"exclude": ["./node_modules"]
 }

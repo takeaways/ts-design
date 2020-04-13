@@ -4,7 +4,8 @@
 	"description": "\"# ts-design\"",
 	"main": "webpack.config.js",
 	"scripts": {
-		"dev": "webpack"
+		"dev": "webpack-dev-server --hot",
+		"start": "webpack"
 	},
 	"repository": {
 		"type": "git",
@@ -21,7 +22,10 @@
 		"@types/react-dom": "^16.9.6",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
-		"typescript": "^3.8.3"
+		"react-hot-loader": "^4.12.20",
+		"styled-components": "^5.1.0",
+		"typescript": "^3.8.3",
+		"webpack-dev-server": "^3.10.3"
 	},
 	"devDependencies": {
 		"awesome-typescript-loader": "^5.2.1",
