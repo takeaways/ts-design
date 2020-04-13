@@ -59,8 +59,8 @@ const data: CardData[] = [
 const App = () => {
 	return (
 		<>
-			{data.map((c) => (
-				<Card cardInfo={c} />
+			{data.map((c, i) => (
+				<Card cardInfo={c} key={i} />
 			))}
 		</>
 	);

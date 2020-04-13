@@ -45,8 +45,8 @@ const Card: FunctionComponent<{ cardInfo: CardData }> = ({ cardInfo }) => {
 							d={cardInfo.direction}
 						>
 							<Styles.CardBodyPointBlockItem>
-								{points.current.map((b) => (
-									<Styles.BallPoint point={b} />
+								{points.current.map((b, i) => (
+									<Styles.BallPoint point={b} key={i} />
 								))}
 								{cardInfo.direction === 'row' && (
 									<span> | {cardInfo.auth}</span>
