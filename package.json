@@ -1,0 +1,31 @@
+{
+	"name": "ts-design",
+	"version": "1.0.0",
+	"description": "\"# ts-design\"",
+	"main": "webpack.config.js",
+	"scripts": {
+		"dev": "webpack"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nomadGeonilJang/ts-design.git"
+	},
+	"author": "GeonilJang",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/nomadGeonilJang/ts-design/issues"
+	},
+	"homepage": "https://github.com/nomadGeonilJang/ts-design#readme",
+	"dependencies": {
+		"@types/react": "^16.9.34",
+		"@types/react-dom": "^16.9.6",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"typescript": "^3.8.3"
+	},
+	"devDependencies": {
+		"awesome-typescript-loader": "^5.2.1",
+		"webpack": "^4.42.1",
+		"webpack-cli": "^3.3.11"
+	}
+}
