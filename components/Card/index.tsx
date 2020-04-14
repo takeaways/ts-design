@@ -14,7 +14,6 @@ const getPointArr = (point: number) => {
 };
 
 const Card: FunctionComponent<{ cardInfo: CardData }> = ({ cardInfo }) => {
-	console.log(cardInfo);
 	const points = useRef<boolean[]>([]);
 	if (cardInfo.point) {
 		points.current = getPointArr(cardInfo.point);
@@ -45,7 +44,7 @@ const Card: FunctionComponent<{ cardInfo: CardData }> = ({ cardInfo }) => {
 							d={cardInfo.direction}
 						>
 							<Styles.CardBodyPointBlockItem>
-								{points.current.map((b, i) => (
+								{points.current.map((b: boolean, i: number) => (
 									<Styles.BallPoint point={b} key={i} />
 								))}
 								{cardInfo.direction === 'row' && (

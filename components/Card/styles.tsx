@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const CardBlock = styled.div`
 	margin: 3px;
+	border-radius: 16px;
 	background: #eee;
 	display: inline-flex;
 	flex-direction: ${(props) => props.column && 'column'};
@@ -9,6 +10,7 @@ export const CardBlock = styled.div`
 
 export const CardImg = styled.img`
 	vertical-align: bottom;
+	border-radius: 16px;
 	width: ${(props) => props.size};
 `;
 export const CardDirection = styled.div`
