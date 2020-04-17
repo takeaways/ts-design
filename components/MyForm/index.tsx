@@ -93,7 +93,7 @@ const Form: FunctionComponent<FormData> = ({ target }) => {
             </Styles.MyForm>
             <p>
                 <label><Styles.MyRadio name={'useAge'} onClick={() => onClickedType('default')}
-                    defaultChecked />Defaul</label>
+                    defaultChecked />Default</label>
                 <label><Styles.MyRadio name={'useAge'} onClick={() => onClickedType('disabled')} />Disabled</label>
                 <label><Styles.MyRadio name={'useAge'} onClick={() => onClickedType('readonly')} />Readonly</label>
             </p>
