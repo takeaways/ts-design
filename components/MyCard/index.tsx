@@ -109,7 +109,7 @@ const Card: FunctionComponent<CardTypes> = ({ auth = "Geonil Jang", title = "당
             </p><br />
             <p><br />
                 <b>[1] Row 상태에서는 별점 아래 테스트는 보이지 않습니다. (주의: 별이 보이는 상태에서만 텍스트가 보입니다.)</b><br />
-                <b>[2] Column 상태에서는 별점은 무조건 보이도록 처리 했습니다.</b><br />
+                <b>[2] Row 상태에서는 별점은 무조건 보이도록 처리 했습니다.</b><br />
                 <label><Styles.MyCheck defaultChecked onClick={onShowText} />showText</label>
                 <label><Styles.MyCheck ref={foorterRef} defaultChecked onClick={onShowFooter} disabled={dir === "row"} />showPoint</label>
             </p><br />
