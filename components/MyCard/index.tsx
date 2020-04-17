@@ -74,10 +74,10 @@ const Card: FunctionComponent<CardTypes> = ({ auth = "Geonil Jang", title = "당
             <Styles.MyCard size={size} direction={dir}>
                 <Styles.MyImg src={"public/test.jpg"} size={size} />
                 <Styles.MyContents size={size}>
-                    {dir === "column" && (<Styles.MyContentHeader>{label}</Styles.MyContentHeader>)}
-                    <Styles.MyContentBody>
+                    {dir === "column" && (<Styles.MyContentHeader size={size}>{label}</Styles.MyContentHeader>)}
+                    <Styles.MyContentBody size={size}>
                         {dir === "column" ? title : text}
-                    </Styles.MyContentBody>
+                    </Styles.MyContentBody >
                     {showFooter && myPoint >= 0 && (
                         <Styles.MyContentFooter>
                             <Styles.FooterBlock>
@@ -85,7 +85,7 @@ const Card: FunctionComponent<CardTypes> = ({ auth = "Geonil Jang", title = "당
                                     <div style={{ marginLeft: "15px" }}>| {auth}</div>}
                             </Styles.FooterBlock>
                             {dir === "column" && showText &&
-                                <Styles.FooterBlock><Styles.FooterSpan>{text}</Styles.FooterSpan></Styles.FooterBlock>}
+                                <Styles.FooterBlock><Styles.FooterSpan size={size}>{text}</Styles.FooterSpan></Styles.FooterBlock>}
                         </Styles.MyContentFooter>
                     )}
                 </Styles.MyContents>

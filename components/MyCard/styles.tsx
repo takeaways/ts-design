@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 interface CardSize {
-    size: 160 | 240 | 320;
-    direction?: "row" | "column";
+  size: 160 | 240 | 320;
+  direction?: "row" | "column";
 }
 
 
@@ -19,7 +19,6 @@ export const MyImg = styled.img<CardSize>`
   width: ${props => props.size + "px"};
   height: ${props => props.size + "px"};
   border-bottom: 0;
-
 `;
 export const MyContents = styled.div<CardSize>`
   width:100%;
@@ -29,25 +28,23 @@ export const MyContents = styled.div<CardSize>`
   background-color:rosybrown;
   
 `;
-export const MyContentHeader = styled.div`
-  //height: 20%;
+export const MyContentHeader = styled.div<CardSize>`
   width:100%;
   background-color: #5f3dc4;
-  flex-basis: 25%;
-  font-size:1.0rem;
-  line-height:1.1rem;
+  flex-basis: 20%;
+  line-height:${props => props.size * 0.7 / 100 + "rem"};
+  font-size:${props => props.size * 0.5 / 100 + "rem"};
+  color:white;
 `;
-export const MyContentBody = styled.div`
-  //height: 45%;
+export const MyContentBody = styled.div<CardSize>`
   padding-left: 10px;
   padding-top:5px;
   flex-basis: 80%;
   overflow: auto;
   background-color: #845ef7;
-  font-size: 1.1rem;
+  font-size:${props => props.size * 0.7 / 100 + "rem"};
 `;
 export const MyContentFooter = styled.div`
-  //height: 35%;
   flex-basis: 35%;
   background-color: #e5dbff;
   display: flex;
@@ -59,18 +56,17 @@ export const FooterBlock = styled.div`
   margin-left: 5px;
   display: flex;
   align-items:center;
-  padding-top:3px;
 `;
 
-export const FooterSpan = styled.span`
+export const FooterSpan = styled.span<CardSize>`
   display:inline-block;
-  height:1.0rem;
-  line-height:1.0rem;
+  /* height:1.1rem; */
   overflow: hidden;
+  font-size:${props => props.size * 0.2 / 200 + "em"};
 `;
 
 interface BallPoint {
-    myPoint: boolean
+  myPoint: boolean
 }
 export const Ball = styled.span<BallPoint>`
   border-radius: 50%;
@@ -81,20 +77,20 @@ export const Ball = styled.span<BallPoint>`
 `;
 
 export const MyRadio = styled.input.attrs({
-    type: 'radio'
+  type: 'radio'
 })`
     margin-left: 15px;
 `;
 export const MyCheck = styled.input.attrs({
-    type: 'checkbox'
+  type: 'checkbox'
 })`
     margin-left: 15px;
 `;
 export const MyRange = styled.input.attrs({
-    type: 'range',
-    min: '0',
-    max: '5',
-    step: '1'
+  type: 'range',
+  min: '0',
+  max: '5',
+  step: '1'
 })`
     margin-left: 15px;
 `;
