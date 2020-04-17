@@ -72,7 +72,7 @@ const Card: FunctionComponent<CardTypes> = ({ auth = "Geonil Jang", title = "당
     return (
         <>
             <Styles.MyCard size={size} direction={dir}>
-                <Styles.MyImg src={"public/test.jpg"} size={size} />
+                <Styles.MyImg src={"public/img.jpg"} size={size} />
                 <Styles.MyContents size={size}>
                     {dir === "column" && (<Styles.MyContentHeader>{label}</Styles.MyContentHeader>)}
                     <Styles.MyContentBody>
